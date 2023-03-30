@@ -86,3 +86,14 @@ agg_item = agg.item()
 print(f"{tensor} \n")
 tensor.add_(5)
 print(tensor)
+
+# Tensor to NumPy array
+t = torch.ones(5)
+print(f"t: {t}")
+n = t.numpy()
+print(f"n: {n}")
+
+# A change in the tensor reflects in the NumPy array.
+t.add_(1)
+print(f"t: {t}")
+print(f"n: {n}")
