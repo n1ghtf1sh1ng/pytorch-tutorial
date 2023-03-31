@@ -2,7 +2,6 @@ from torch.utils.data import DataLoader
 from torchvision.io import read_image
 import pandas as pd
 import os
-import torch
 from torch.utils.data import Dataset
 from torchvision import datasets
 from torchvision.transforms import ToTensor
