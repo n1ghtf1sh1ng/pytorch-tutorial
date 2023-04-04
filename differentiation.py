@@ -15,3 +15,11 @@ print(f"Gradient function for loss = {loss.grad_fn}")
 loss.backward()
 print(w.grad)
 print(b.grad)
+
+# Disabling Gradient Tracking
+z = torch.matmul(x, w) + b
+print(z.requires_grad)
+
+with torch.no_grad():
+    z = torch.matmul(x, w) + b
+print(z.requires_grad)
